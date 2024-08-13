@@ -7,119 +7,122 @@
 
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        .form-container {
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
-            width: 400px;
-        }
+.form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-height: 80vh; /* Limit the height of the form */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
 
-        .form-container h2 {
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
 
-        .form-container label {
-            display: block;
-            margin-bottom: 8px;
-            color: #b0bec5;
-        }
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b0bec5;
+}
 
-        .form-container input[type="text"],
-        .form-container input[type="file"],
-        .form-container textarea {
-            width: calc(100% - 110px); /* Adjust width for inputs */
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            border: 1px solid #2e2e2e;
-            background-color: #333;
-            color: #ffffff;
-        }
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container textarea {
+    width: calc(100% - 110px); /* Adjust width for inputs */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #2e2e2e;
+    background-color: #333;
+    color: #ffffff;
+}
 
-        .form-container textarea {
-            resize: vertical;
-            height: 80px;
-        }
+.form-container textarea {
+    resize: vertical;
+    height: 80px;
+}
 
-        .form-container .input-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
+.form-container .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
 
-        .form-container .input-group input {
-            margin-right: 10px;
-            flex: 1; /* Allow input to take remaining space */
-        }
+.form-container .input-group input {
+    margin-right: 10px;
+    flex: 1; /* Allow input to take remaining space */
+}
 
-        .form-container .add-btn,
-        .form-container .delete-btn {
-            width: 80px; /* Smaller button width */
-            padding: 8px;
-            border-radius: 4px;
-            border: none;
-            color: #ffffff;
-            font-weight: 500;
-            cursor: pointer;
-        }
+.form-container .add-btn,
+.form-container .delete-btn {
+    width: 80px; /* Smaller button width */
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
 
-        .form-container .add-btn {
-            background-color: #f9a825;
-        }
+.form-container .add-btn {
+    background-color: #f9a825;
+}
 
-        .form-container .add-btn:hover {
-            background-color: #ffd54f;
-        }
+.form-container .add-btn:hover {
+    background-color: #ffd54f;
+}
 
-        .form-container .delete-btn {
-            background-color: #e53935;
-            margin-left: 10px;
-        }
+.form-container .delete-btn {
+    background-color: #e53935;
+    margin-left: 10px;
+}
 
-        .form-container .delete-btn:hover {
-            background-color: #ef5350;
-        }
+.form-container .delete-btn:hover {
+    background-color: #ef5350;
+}
 
-        .form-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
+.form-container ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .form-container ul li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            background-color: #333;
-            padding: 8px;
-            border-radius: 4px;
-        }
+.form-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 4px;
+}
 
-        .form-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            border-radius: 4px;
-            border: none;
-            background-color: #26a69a;
-            color: #ffffff;
-            font-weight: 500;
-            cursor: pointer;
-        }
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #26a69a;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
 
-        .form-container input[type="submit"]:hover {
-            background-color: #80cbc4;
-        }
+.form-container input[type="submit"]:hover {
+    background-color: #80cbc4;
+}
+
     </style>
 </head>
 <body>
